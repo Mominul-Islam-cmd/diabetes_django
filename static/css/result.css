@@ -1,0 +1,19 @@
+.pre_re{
+    text-align: center;
+    margin-top: 80px;
+    background-color: beige;
+    max-width: 500px;
+    align-items: center;
+    margin-left: 400px;
+    height: 200px;
+    border: 3px solid rebeccapurple;
+    border-radius: 5px;
+}
+
+.r1{
+    color: red;
+}
+
+.pr_ag1{
+    color: aliceblue;
+}

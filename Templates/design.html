@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetics Prediction</title>
+
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+  
+</head>
+
+
+
+<body>
+    <div class="main_body">
+        <h3 class="header">Diabetics Prediction</h3>
+        <p class="p">Age: <input type="text" placeholder="Input_age" style="margin-left: 105px;" class="in"></p>
+        <p class="p">hypertension: <input type="text"placeholder="Input_hypertension" style="margin-left: 50px;"class="in"></p>
+        <p class="p">heart_disease	: <input type="text"placeholder="Input_heart_disease" style="margin-left: 45px;"class="in"></p>
+        <p class="p">bmi: <input type="text" placeholder="Input_bmi" style="margin-left: 110px;" class="in"></p>
+        <p class="p">HbA1c_level	: <input type="text"placeholder="Input_HbA1c_level" style="margin-left: 46px;"class="in"></p>
+        <p class="p">blood_glucose_level	: <input type="text" placeholder="Input_blood_glucose_level"  class="in"></p>
+        <p class="p">Female: <input type="text"  placeholder="Input_Female"    style="margin-left: 88px;"class="in"></p>
+        <p class="p">Male	: <input type="text" placeholder="Input_Male"   style="margin-left: 95px;"class="in"></p>
+        <p class="p">Other	: <input type="text" placeholder="Input_Other"   style="margin-left: 92px;"class="in"></p>
+
+    </div>
+
+    <div class="result">
+        <button type="submit"  class="sr">Result</button>
+
+    </div>
+   
+
+
+
+</body>
+
+</html> -->
+
+<!-- prediction/templates/prediction/form.html -->
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{% static 'css\pred.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<!-- <style>
+
+    .prediction{
+        background-color: red;
+    }
+</style> -->
+<body>
+    <div class="prediction">
+
+        <h2 class="header1">Diabetes Prediction Form</h2>
+        <form method="post">
+            {% csrf_token %}
+
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" step="0.1"><br><br>
+
+            <label for="hypertension">Hypertension:</label>
+            <input type="radio" id="hypertension" name="hypertension" value="1"> Have hypertension(1)
+            <input type="radio" id="hypertension" name="hypertension" value="0" checked> Don’t have hypertension(0) <br><br>
+
+            <label for="heart_disease">Heart Disease:</label>
+            <input type="radio" id="heart_disease" name="heart_disease" value="1">  Have heart disease(1)
+            <input type="radio" id="heart_disease" name="heart_disease" value="0" checked>  Don’t have heart disease(0) <br><br>
+
+
+
+
+            <label for="bmi">BMI:</label>
+            <input  type="number" id="bmi" name="bmi" step="0.1"><br><br>
+
+            <label for="hba1c_level">HbA1c Level:</label>
+            <input type="number" id="hba1c_level" name="hba1c_level" step="0.1"><br><br>
+
+            <label for="blood_glucose_level">Blood Glucose Level:</label>
+            <input type="number" id="blood_glucose_level" name="blood_glucose_level" step="0.1"><br><br>
+
+            <label for="heart_disease">Female:</label>
+            <input type="radio" id="Female" name="Female" value="1"> Yes
+            <input type="radio" id="Female" name="Female" value="0" checked> No<br><br>
+
+            <label for="Male">Male:</label>
+            <input type="radio" id="Male" name="Male" value="1"> Yes
+            <input type="radio" id="Male" name="Male" value="0" checked> No<br><br>
+
+            <label for="Other">Other:</label>
+            <input type="radio" id="Other" name="Other" value="1"> Yes
+            <input type="radio" id="Other" name="Other" value="0" checked> No<br><br>
+
+           
+            <button  type="submit"  class="btn btn-info  btn-lg">Predict</button>
+        </form>
+
+    </div>
+<!-- .................no2.................................... -->
+
+<!-- <div class="main_body">
+    <h3 class="header">Diabetics Prediction</h3>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <p class="p">Age: <input type="number" id="age" name="age" step="0.1" placeholder="Input_age" style="margin-left: 115px;" class="in"></p>
+        <p class="p">hypertension: <input type="number" id="hypertension" name="hypertension" step="0.1" placeholder="Input_hypertension" style="margin-left: 55px;"class="in"></p>
+        <p class="p">heart_disease	: <input type="number" id="heart_disease" name="heart_disease" step="0.1"  placeholder="Input_heart_disease" style="margin-left: 45px;"class="in"></p>
+        <p class="p">bmi: <input  type="number" id="bmi" name="bmi" step="0.1" placeholder="Input_bmi" style="margin-left: 118px;" class="in"></p>
+        <p class="p">HbA1c_level	: <input type="number" id="hba1c_level" name="hba1c_level" step="0.1"  placeholder="Input_HbA1c_level" style="margin-left: 56px;"class="in"></p>
+        <p class="p">blood_glucose_level	: <input type="number" id="blood_glucose_level" name="blood_glucose_level" step="0.1" placeholder="Input_blood_glucose_level"  class="in"></p>
+        <p class="p">Female: <input type="number" id="Female" name="Female" step="0.1"   placeholder="Input_Female"    style="margin-left: 96px;"class="in"></p>
+        <p class="p">Male	: <input type="number" id="Male" name="Male"  step="0.1"  placeholder="Input_Male"   style="margin-left: 105px;"class="in"></p>
+        <p class="p">Other	: <input type="number" id="Other" name="Other" step="0.1" placeholder="Input_Other"   style="margin-left: 100px;"class="in"></p>
+
+        <button type="submit" class="btn btn-info  btn-lg" id="pred1">Predict</button>
+
+    </form>
+  
+
+</div> -->
+
+
+
+</body>
+
+</html>

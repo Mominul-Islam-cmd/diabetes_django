@@ -1,0 +1,23 @@
+<!-- prediction/templates/prediction/result.html -->
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+<head>
+    <title>Diabetes Prediction Result</title>
+    <link rel="stylesheet" href="{% static 'css\result.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pre_re">
+        <h2>Prediction Result</h2>
+        <p class="r1">{{ result }}</p>
+        <!-- <p > <a href="{% url 'predict_diabetes' %}">Predict again</a></p> -->
+        <button  type="submit" class="btn btn-info  btn-lg"> <a href="{% url 'predict_diabetes' %}" class="pr_ag1">Predict Again</a> </button>
+
+    </div>
+
+</body>
+
+</html>

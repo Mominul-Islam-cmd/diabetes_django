@@ -1,0 +1,67 @@
+.main_body {
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(70, 105, 105);
+    border: 5px solid saddlebrown;   
+    border-radius: 10px;
+}
+
+
+
+.header {
+    text-align: center;
+    color: rgb(228, 12, 12);
+    background-color: rgb(196, 191, 125);
+    border: 3px solid green;
+    padding: 10px;
+    font-size: 30px;
+
+}
+.in{
+    padding: 8px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: azure;
+    
+}
+
+input::placeholder{
+    opacity: 0.3; 
+    color: rgba(0, 0, 0, 0.884);
+}
+
+.p{
+    color: rgb(226, 247, 240);
+}
+
+.result{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.sr{
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+/* .home{
+    text-align: center;
+}
+ */
+
+
+
+.home {
+   background-color: antiquewhite;
+   background-image: url('images/diabetes.png');
+   text-align: center;
+   
+
+}
+

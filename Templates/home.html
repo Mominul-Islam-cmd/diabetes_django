@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetics</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-image: url("{% static 'images/diabetes.png' %}");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .home {
+        margin-top: 100px;
+        width: 700px;
+        height: 100px;
+        margin-left: 300px;
+
+    }
+
+    .clik {
+        color: aliceblue;
+    }
+
+     /* Remove hover effect */
+     a:hover {
+            color: inherit; /* Keeps the same color on hover */
+            text-decoration: none; /* Removes underline on hover */
+        }
+        
+        /* Remove dashed outline */
+        a:focus,
+        a:active {
+            outline: none;
+        }
+
+        /* Optional: remove underline in general */
+        a {
+            text-decoration: none;
+        }
+</style>
+
+<body>
+
+    <div class="home">
+        <h2>Welcome to Diabetics Prediction</h2>
+        <button type="submit" class="btn btn-info  btn-lg"> <a href="{% url 'predict_diabetes' %}" class="clik">Click Here</a> </button>
+
+    </div>
+
+
+</body>
+
+</html>
