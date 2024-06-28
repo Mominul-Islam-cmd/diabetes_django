@@ -11,24 +11,23 @@ ________________________________________
 📂 Dataset
 
 The dataset used for this project is sourced from Kaggle and contains various medical predictor variables and one target variable indicating the presence of diabetes.
-🛠️ Steps:
-1.	📥 Load the data: Import the dataset into a Jupyter notebook for preprocessing and model training.
-2.	🧹 Preprocess the data:
-	
-       o	🔍 Handle missing values.
-  	
-       o	🔄 Encode categorical variables if any.
-  	
-       o	📏 Scale the features if necessary.
-________________________________________
-🧠 Model Building and Evaluation
+## 🧹 Data Preprocessing
+- **Handling Missing Values**: Missing values were addressed appropriately in the dataset.
+- **One-Hot Encoding**: Categorical features were converted to numerical values using one-hot encoding.
+- **Feature Scaling**: The features were scaled to a standard range using StandardScaler from the `sklearn` library.
 
-🧮 Algorithm: K-Nearest Neighbors (KNN)
+## 🤖 Machine Learning Model
+- **Algorithm Used**: K-Nearest Neighbors (KNN)
 
-📝 Steps:
-1.	🔀 Split the data: Divide the dataset into training and testing sets.
-2.	🏋️ Train the model: Use the KNN algorithm to train the model on the training set.
-3.	📊 Evaluate the model: Assess the model’s performance using metrics like accuracy, precision, recall, and F1 score.
+### 📊 Steps Involved
+1. **Data Splitting**: The dataset was split into training and testing sets.
+2. **Model Training**: The KNN model was trained on the processed training data.
+3. **Model Evaluation**: The trained model was evaluated on the testing data, achieving an accuracy of 96%.
+
+### 📈 Model Performance
+- **Accuracy**: 96%
+- **Precision, Recall, F1-Score**: Detailed classification report is included in the notebook, showing high performance for class 0 and relatively lower performance for class 1.
+
 ________________________________________
 🌐 Deployment with Django
 
