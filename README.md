@@ -1,6 +1,9 @@
-🚀 Project Overview
+# 🚀 Project Overview
+
 📌 Title: Diabetes Prediction Using KNN and Deployment with Django
+
 🎯 Objective
+
 To predict whether a patient has diabetes using the K-Nearest Neighbors (KNN) machine learning algorithm. The model will be trained on data sourced from Kaggle and deployed using Django, rendered via a web platform.
 ________________________________________
 📊 Data Source and Preprocessing
