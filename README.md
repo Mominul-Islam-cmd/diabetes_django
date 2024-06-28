@@ -9,6 +9,7 @@ ________________________________________
 📊 Data Source and Preprocessing
 
 📂 Dataset
+
 The dataset used for this project is sourced from Kaggle and contains various medical predictor variables and one target variable indicating the presence of diabetes.
 🛠️ Steps:
 1.	📥 Load the data: Import the dataset into a Jupyter notebook for preprocessing and model training.
