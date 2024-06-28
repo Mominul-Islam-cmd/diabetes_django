@@ -29,13 +29,12 @@ The dataset used for this project is sourced from Kaggle and contains various me
 - **Precision, Recall, F1-Score**: Detailed classification report is included in the notebook, showing high performance for class 0 and relatively lower performance for class 1.
 
 ________________________________________
-🌐 Deployment with Django
+## 🌐 Deployment with Django
+- **🖥️ Framework**: Django for web application deployment.
 
-🖥️ Framework: Django for web application deployment.
-
-📝 Steps:
-1.	🛠️ Create a Django project: Set up a new Django project and configure the necessary settings.
-2.	🏗️ Build the app: Create an app within the Django project for handling predictions.
-3.	🔗 Integrate the model: Load the trained KNN model into the Django app to make predictions on user input.
-4.	🎨 Create views and templates: Design the front end to allow users to input data and view predictions.
-5.	☁️ Deploy using Render: Deploy the Django app using Render for seamless web hosting.
+### 📝 Steps
+1. **🛠️ Create a Django project**: Set up a new Django project and configure the necessary settings.
+2. **🏗️ Build the app**: Create an app within the Django project for handling predictions.
+3. **🔗 Integrate the model**: Load the trained KNN model into the Django app to make predictions on user input.
+4. **🎨 Create views and templates**: Design the front end to allow users to input data and view predictions.
+5. **☁️ Deploy using Render**: Deploy the Django app using Render for seamless web hosting.
