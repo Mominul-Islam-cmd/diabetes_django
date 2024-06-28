@@ -10,9 +10,9 @@ The dataset used for this project is sourced from Kaggle and contains various me
 🛠️ Steps:
 1.	📥 Load the data: Import the dataset into a Jupyter notebook for preprocessing and model training.
 2.	🧹 Preprocess the data:
-o	🔍 Handle missing values.
-o	🔄 Encode categorical variables if any.
-o	📏 Scale the features if necessary.
+       o	🔍 Handle missing values.
+       o	🔄 Encode categorical variables if any.
+       o	📏 Scale the features if necessary.
 ________________________________________
 🧠 Model Building and Evaluation
 🧮 Algorithm: K-Nearest Neighbors (KNN)
